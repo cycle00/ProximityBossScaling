@@ -1,1 +1,6 @@
-Modify this file with a description of your mod.
+Created by Cycle
+------------------------------------------------------------
+
+Have you ever been on a server with your friends trying to farm this one boss for a specific drop, but friend A is out mining, friend B is on the other side of the world fishing, and friend C is afk at spawn? Well I certainly have. This makes it a huge pain to kill any decently difficult boss because of just how much longer it takes. So I created this mod to deal with the issue.
+
+GitHub: {ModHomepage}
