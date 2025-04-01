@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProximityBossScaling", "ProximityBossScaling.csproj", "{561E360B-756E-9AEE-7DFC-DC99B676E987}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{561E360B-756E-9AEE-7DFC-DC99B676E987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{561E360B-756E-9AEE-7DFC-DC99B676E987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{561E360B-756E-9AEE-7DFC-DC99B676E987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{561E360B-756E-9AEE-7DFC-DC99B676E987}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87C22CD3-0A05-45E3-8BBC-2E2BE0260E08}
+	EndGlobalSection
+EndGlobal

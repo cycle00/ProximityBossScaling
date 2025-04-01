@@ -1,0 +1,3 @@
+displayName = Proximity Boss Scaling
+author = Cycle
+version = 0.1
