@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MonoMod.Cil;
 using Terraria;
 using Terraria.ModLoader;
@@ -13,7 +9,7 @@ namespace ProximityBossScaling {
 		public override void Load() {
 			IL_NPC.ScaleStats += ScaleStats_Hook;
 			IL_NPC.NewNPC += NPCPosition_Hook;
-			Logger.Info("Proximity Boss Scaling v1.0 has been loaded.");
+			Logger.Info("Proximity Boss Scaling v1.1 has been loaded.");
 		}
 
 		private static void ScaleStats_Hook(ILContext il) {
