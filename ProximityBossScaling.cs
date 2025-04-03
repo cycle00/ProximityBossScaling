@@ -13,7 +13,7 @@ namespace ProximityBossScaling {
 		public override void Load() {
 			IL_NPC.ScaleStats += ScaleStats_Hook;
 			IL_NPC.NewNPC += NPCPosition_Hook;
-			Logger.Info("Proximity Boss Scaling v0.1 has been loaded.");
+			Logger.Info("Proximity Boss Scaling v1.0 has been loaded.");
 		}
 
 		private static void ScaleStats_Hook(ILContext il) {
