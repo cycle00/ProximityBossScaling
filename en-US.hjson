@@ -1,0 +1,15 @@
+Mods: {
+	ProximityBossScaling: {
+		Configs: {
+			ConfigToggle: {
+				DisplayName: Config Toggle
+				Headers.Enabled: Enabled Header
+
+				Toggle: {
+					Label: Toggle
+					Tooltip: Enables and disables the mod during runtime. Use this if a boss' health is not properly scaling using the mod.
+				}
+			}
+		}
+	}
+}

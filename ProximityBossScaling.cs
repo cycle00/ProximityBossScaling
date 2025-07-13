@@ -5,11 +5,10 @@ using Terraria.ModLoader;
 
 namespace ProximityBossScaling {
 	public class ProximityBossScaling : Mod {
-		
 		public override void Load() {
 			IL_NPC.ScaleStats += ScaleStats_Hook;
 			IL_NPC.NewNPC += NPCPosition_Hook;
-			Logger.Info("Proximity Boss Scaling v1.1 has been loaded.");
+			Logger.Info("Proximity Boss Scaling v1.2 has been loaded.");
 		}
 
 		private static void ScaleStats_Hook(ILContext il) {
@@ -23,15 +22,22 @@ namespace ProximityBossScaling {
 					cursor.EmitLdarg0(); // push a the current NPC instance onto the stack since next function call requires the current instance
 					cursor.EmitDelegate<Func<NPC, int>>(npc => {
 						int num = 0;
-						foreach (var player in Main.ActivePlayers) {
-							if ((int)Math.Abs(npc.position.X - player.position.X) < (int)((double)NPC.sWidth * 2.1) && (int)Math.Abs(npc.position.Y - player.position.Y) < (int)((double)NPC.sHeight * 2.1)) {
-								num++;
+						if (ModContent.GetInstance<ConfigToggle>().Toggle) {	
+							foreach (var player in Main.ActivePlayers) {
+								if ((int)Math.Abs(npc.position.X - player.position.X) < (int)((double)NPC.sWidth * 2.1) && (int)Math.Abs(npc.position.Y - player.position.Y) < (int)((double)NPC.sHeight * 2.1)) {
+									num++;
+								}
 							}
+							return num;
+						} else {
+							foreach (var player in Main.ActivePlayers) {
+								num++;
+							} 
+							return num;
 						}
-						return num;
 					}); // push the detected number of players to the stack
 					cursor.EmitBr(label); // skip the original code which pushes the total number of players to the stack
-					
+
 					cursor.GotoNext(i => i.MatchDup());
 					cursor.MarkLabel(label);
 

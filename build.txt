@@ -1,6 +1,6 @@
 displayName = Proximity Boss Scaling
 author = Cycle
-version = 1.1
+version = 1.2
 homepage = https://github.com/cycle00/ProximityBossScaling
 hideCode = false
 hideResources = false
